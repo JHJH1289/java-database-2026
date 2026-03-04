@@ -173,5 +173,28 @@
 
 ### sample DB 생성
 
+
+## Day04
+- 관계형 데이터베이스
+    - 관련된 데이터를 테이블 형태로 저장하고, 테이블간 관계를 통해 데이터를 관리하는 DB모델
+    - 테이블 - 데이터를 저장하는 구조. Table/Entity
+    - 레코드/로우 - 관련 데이터가 모두 모인 하나의 데이터 행. Record/Row/Tuple
+    - 컬럼 - 데이터 특징을 담는 하나의 속성, Column/Attribute
+    - PK - 각 행의 유일하게 식별하는 키. 여러개의 PK를 가질 수도 있음. Primary Key
+    - FK - 부모테이블의 PK와 관계를 맺는 키 Foreign Key
+
+- ERD(Entity Relationship Diagram)
+    - 관계형 데이터베이스 구조를 그림으로 표현한 설계도
+    - 데이터베이스를 만들기 전에 어떤 테이블이 필요하고 어떤 관계를 맺어야 하는지 시각적 표현
+
+- ERD 설명
+    - PK - DEPT.DEPTNO, EMP.EMPNO
+    - FK - EMP.DEPTNO
+    - 일반컬럼 - 그외 나머지 컬럼
+
+- 조인 계속
+    - 등가조인 - `내부조인`, Inner join, Equi join
+    - 비등가조인 - 등가조인 외의 방법, Between 등 사용. 많이 사용 안함
+    - 셀프조인 - 자체조인. 자기 테이블을 조인. 자기 테이블내에 해당 PK와 관련있는 FK가 지정되어 있어야함
 ### 조인
 
